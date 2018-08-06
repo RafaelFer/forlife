@@ -1,0 +1,28 @@
+Comandos git:
+
+git init      : Inicia um Repositório na pasta quem que o comando foi executado
+git ls-files  : Mostra os arquivos controlados pelo git.
+git status    : Lista todos os arquivos que estão sendo tradados e não pelo git, e suas modificações
+git add       : adiciona arquivos no git (que podem ser commitados)
+git commit -m : Commita no repositorio ( -m é para passar uma mensagem em  -m "Primeiro Commit")
+
+git config user.name  : configura usuario para o git, se nao for global configura apenas para o repositorio presente
+git config user.email : configura email para o git, se nao for global configura apenas para o repositorio presente
+
+Obs1: Toda vez que voce adicionar um arquivo e comita-lo, caso faça alguma alteração, é preciso adiciona-lo novamente e para então commitar a alteração.
+
+git log -p: Informa os logs dos commits, com dados do usuario, dados mensagens e tudo mais.
+git whatchanged -p: Mesma idéia do Log só que com muitos mais detalhes. (-p Mostra os dados alterados em cada arquivo).
+-p mostra as linhas que houveram modificacoes
+
+#Remoto 
+git remote : Lista os repositorios remotos
+git remote add NOME URL : Adiciona um repositorio remote com o nome que vc escolher e passando o caminho do repositorio.
+
+git clone URL : Faz donwload do repositorio online para sua maquina.
+
+git push NOMEREPOSITORIO NOMEBRANCH : Commita os dados depois de adicionasdos e commitados no git, envia pa o repositorio.
+
+
+
+
