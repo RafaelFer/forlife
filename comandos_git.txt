@@ -1,3 +1,5 @@
+Autor: Rafael
+
 Comandos git:
 
 git init      : Inicia um Repositório na pasta quem que o comando foi executado
