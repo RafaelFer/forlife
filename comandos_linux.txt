@@ -1,0 +1,17 @@
+ps -ef | grep           : listar processos
+kill -9 NUMEROPROCESSO  : mata o processo
+
+@ Grep com parametro Afeter e passando numero de linhas
+
+grep teste.txtx --color=auto -A 150
+
+@ Head para pegar o inicio do arquivo passando o numero de linhas depois
+head teste.txt -n 100
+
+@count de grep
+grep "ERRORCODE=-4470" txt.log | wc -l
+
+
+@Tail pegando numero de linhas
+
+tail -2000f server.log
