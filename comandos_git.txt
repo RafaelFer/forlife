@@ -29,5 +29,6 @@ git branch -a : lista todas as branchs remotas e nao
 
 git branch -d : Deleta a branch, se for precisar forçar tem que usar o -D
 
+git push -u nomerepositorio nomebranch : com -u criamos uma branch remota no e ja vinculamos ela a branch remota com mesmo nome
 
-
+git push -d nomerepositorio nomebranch : deleta a branch remota
