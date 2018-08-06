@@ -25,6 +25,9 @@ git clone URL : Faz donwload do repositorio online para sua maquina.
 
 git push NOMEREPOSITORIO NOMEBRANCH : Commita os dados depois de adicionasdos e commitados no git, envia pa o repositorio.
 
+git branch -a : lista todas as branchs remotas e nao
+
+git branch -d : Deleta a branch, se for precisar forçar tem que usar o -D
 
 
 
