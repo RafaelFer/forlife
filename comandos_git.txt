@@ -69,3 +69,5 @@ O Comando rebase tem alguns outros comandos, são eles: --continue, --skip e --a
 git stash : coloca em um pilha de memoria qualquer alteracao que vc nao queira commitar naquele momento.
 git stash pop: coloca denovo no controle do git 
 git stash list: mostra a lista que esta em stash.
+
+final
