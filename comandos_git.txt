@@ -66,3 +66,6 @@ Obs3: Quando voce está fazendo um rabase e acontece um conflito, o git cria uma
 O Comando rebase tem alguns outros comandos, são eles: --continue, --skip e --abort --continue deve ser utilizado após a resolução manual de conflitos; --skip faz com que suas alterações sejam descartadas; --abort volta atrás em todo o processo de rebase.
 
 
+git stash : coloca em um pilha de memoria qualquer alteracao que vc nao queira commitar naquele momento.
+git stash pop: coloca denovo no controle do git 
+git stash list: mostra a lista que esta em stash.
