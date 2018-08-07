@@ -51,8 +51,15 @@ git mergetool --tool-help : Lista alguns programas para se fazer merge com inter
 git mergetool -t nome_do_programa : para instalar o programa
 
 
-
-
 Isso acontece quando gera conflito e o git não consegue fazer merge automatico, então é necessário a abertura do arquivo e o merge manual.	
+
+git checkout -b nomedabranch : Cria uma branch e já muda para a branch criada.
+
+#Trabalhando com branchs...Sempre crie uma nova branch, trabalhe nessa branch local, após commitar os dados volter para a branch master e faça o merge.
+
+git merge nomedabranchQueDesejaFazerOMerger : quando vc estiver na master e utilzar este comando, ele vai fazer o merge com a branch que vc informar.
+
+git rebase nomedabranchemaster nomedabranchedesenvolvimento : este comando tras os dados de uma branch master para uma branch filha, e atualiza a branch filha com todos os dados adicionados na branch pai.
+
 
 
