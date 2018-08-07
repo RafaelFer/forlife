@@ -35,4 +35,4 @@ git push -d nomerepositorio nomebranch : deleta a branch remota
 
 git fetch nomedorepositorio : este comando verifica todas as atualizações que foram realizadas no repositorio 
 
-add toline
+
