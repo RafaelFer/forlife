@@ -61,5 +61,8 @@ git merge nomedabranchQueDesejaFazerOMerger : quando vc estiver na master e util
 
 git rebase nomedabranchemaster nomedabranchedesenvolvimento : este comando tras os dados de uma branch master para uma branch filha, e atualiza a branch filha com todos os dados adicionados na branch pai.
 
+Obs3: Quando voce está fazendo um rabase e acontece um conflito, o git cria uma branch temporaria chamada "no branch" para que voce possa tratar os conflitos.
+
+O Comando rebase tem alguns outros comandos, são eles: --continue, --skip e --abort --continue deve ser utilizado após a resolução manual de conflitos; --skip faz com que suas alterações sejam descartadas; --abort volta atrás em todo o processo de rebase.
 
 
