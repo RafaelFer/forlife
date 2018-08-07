@@ -35,4 +35,24 @@ git push -d nomerepositorio nomebranch : deleta a branch remota
 
 git fetch nomedorepositorio : este comando verifica todas as atualizações que foram realizadas no repositorio 
 
+<<<<<<<<<<<<<<<<<<<<
+sua
+
+===============
+dividao
+
+
+>>>>>>>>>>>>>>>>>>>
+repo
+
+103ka90sdia9sdia0d rash
+
+git mergetool --tool-help : Lista alguns programas para se fazer merge com interface gráfica
+git mergetool -t nome_do_programa : para instalar o programa
+
+
+
+
+Isso acontece quando gera conflito e o git não consegue fazer merge automatico, então é necessário a abertura do arquivo e o merge manual.	
+
 
