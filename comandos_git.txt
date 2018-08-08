@@ -70,4 +70,43 @@ git stash : coloca em um pilha de memoria qualquer alteracao que vc nao queira c
 git stash pop: coloca denovo no controle do git 
 git stash list: mostra a lista que esta em stash.
 
+git stash apply : restaura o stash passando o numero do apply... (obtido na list)
+git stash drop : dropa o stash que esta no list
+
 final teste
+
+git checkout nomedoArquivo : desfaz o que esta comitado e deixa o arquivo igual ao do repositorio remoto.
+
+git reset HEAD nomedoarquivo : se vc alterou o arquivo e ja deu um add e quer voltar, esse comando volta o arquivo para o ultimo commit, no caso pelo comando head.
+
+git reset HAShDoCommit : Isso faz com que o arquivo volte a ser como no commit do hash que vc passou. (Seu arquivo fica igual como vc fez...)
+
+git revert HAShdoCommit : Esse comando retira um unico commit, sem alterar os commits posteriores a ele.... ex: comit1, comit2, SAIU1commit, commit4, commit5...
+
+#BISECT 
+
+Bisect consegue filtrar commits, filtrando o commit ruim e bom... para usa-lo é preciso usar o start passando comando:
+
+git bisect start : Starta o modo bisect.
+
+git bisect bad HEAD : commit atual é o ruim....
+git bisect good HASHdoCommit : commit bom 
+
+Nesse momento o bisect começa restaurar o arquivo com os commits do intervalo, e sempre pergunta se esta bom pra voce
+quando vc achar um commit good, ele avançara para frente filtrando mais ainda o intervalor de commits.quando sobrar apenas 1 commit, ele retornara o hash deste commit.
+
+git reset --hard : Com este comando, as alterações são removidas do histórico local de commits e também tanto do index quanto do working directory, permanentemente.
+
+git reset --soft : Com este comando, as alterações são removidas do histórico local de commits, mas não são removidas do index.
+
+git reset Com este comando, as alterações são removidas do histórico local de commits, do index, mas não doworking directory`.
+
+Ao digitarmos HEAD~ seguido de um número inteiro n, será feita uma referência ao n-ésimo commit anterior ao HEAD. Por exemplo, HEAD~1, faz referência ao penúltimo commit e HEAD~2, ao antepenúltimo. No caso específico do penúltimo commit, também pode-se referenciá-lo utilizando o atalho HEAD^
+
+
+
+
+
+
+
+
