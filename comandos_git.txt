@@ -111,10 +111,22 @@ st = status    > git st  =   git status
 soltar vários comandos ao mesmo tempo: 
 
 envia = git checkout master && git pull &&rebase master && (é preciso passar !) antes do comando, desta forma o git ira executar os comandos em sequencia 
+	
 
+git log --pretty=oneline  : mostra um commit por linha!
+git log --pretty=short  : igual ao log normal mas sem a data
+git log --pretty=full : pega o commit original, e o commit que subiu para r
 
-git log pretty:oneline  = mostra um commit por linha!
-git log pretty:short  = igual ao log normal mas sem a data
+git log -p  : Mostra os logs e as alterações de cada arquivo
+git log --stat : mostra o arquivo que foi alterado de forma resumida.
+
+github fork : quando vc quer colaborar para algum projeto opensource, vc vai no projeto que deseja colaborar, clica em fork e esse projeto é copiado autimaticamente para o seu repositorio, após isso vc pode dar um git clone diretamente no seu repositorio.
+
+pull resquest : vc cria um commit no seu rep, como esta com fork em outro projeto, vc da um pull request e solicita ao dono do rep que ele autorize o seu request no projeto atual...	
+
+Para realizar esse processo via interface git, é só dar um clone no repositorio original e depois ficar fazendo pull do original para sua master
+
+git diff  branch/branch : mostra as diferencas
 
 
 
