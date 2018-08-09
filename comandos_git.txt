@@ -25,7 +25,20 @@ git clone URL : Faz donwload do repositorio online para sua maquina.
 
 git push NOMEREPOSITORIO NOMEBRANCH : Commita os dados depois de adicionasdos e commitados no git, envia pa o repositorio.
 
+<<<<<<< HEAD
 git branch -a : lista todas as branchs remotas e nao
+=======
+#Branchs
+
+git branch : Lista as branches
+git branch nomedabranch : cria uma branch nova
+git checkout nomedabranch : troca de branch
+
+Obs2: Quando se cria uma branch, ela herda tudo da master...
+
+
+
+>>>>>>> iniciando design
 
 git branch -d : Deleta a branch, se for precisar forçar tem que usar o -D
 
@@ -35,17 +48,6 @@ git push -d nomerepositorio nomebranch : deleta a branch remota
 
 git fetch nomedorepositorio : este comando verifica todas as atualizações que foram realizadas no repositorio 
 
-<<<<<<<<<<<<<<<<<<<<
-sua
-
-===============
-dividao
-
-
->>>>>>>>>>>>>>>>>>>
-repo
-
-103ka90sdia9sdia0d rash
 
 git mergetool --tool-help : Lista alguns programas para se fazer merge com interface gráfica
 git mergetool -t nome_do_programa : para instalar o programa
