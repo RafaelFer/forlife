@@ -132,7 +132,7 @@ git log --graph : mostra no repositorio os caminhos que a branch foi seguindo...
 
 git cherry-prick hashDoCommit : puxa para a branch master apenas o commit da branch desenvolvimento, deixando todo o resgante deboa (merge manual).
 
-é possivel passar vários hash para recuperar no cherrypick
+é possivel passar vários hash para recuperar no cherrypic
 
-
+Para usar uma ferramenta grafica, é possível iniciar uma ferramente grafica chamada git cola.
 
