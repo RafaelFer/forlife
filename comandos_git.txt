@@ -103,10 +103,18 @@ git reset Com este comando, as alterações são removidas do histórico local d
 
 Ao digitarmos HEAD~ seguido de um número inteiro n, será feita uma referência ao n-ésimo commit anterior ao HEAD. Por exemplo, HEAD~1, faz referência ao penúltimo commit e HEAD~2, ao antepenúltimo. No caso específico do penúltimo commit, também pode-se referenciá-lo utilizando o atalho HEAD^
 
+Criando alias com git:
+
+abrir arquivo gitconfig localizado em ~/ criar um alias [alias] e começar as referencias ex:
+st = status    > git st  =   git status
+
+soltar vários comandos ao mesmo tempo: 
+
+envia = git checkout master && git pull &&rebase master && (é preciso passar !) antes do comando, desta forma o git ira executar os comandos em sequencia 
 
 
-
-
+git log pretty:oneline  = mostra um commit por linha!
+git log pretty:short  = igual ao log normal mas sem a data
 
 
 
