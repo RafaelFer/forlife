@@ -128,5 +128,11 @@ Para realizar esse processo via interface git, é só dar um clone no repositori
 
 git diff  branch/branch : mostra as diferencas
 
+git log --graph : mostra no repositorio os caminhos que a branch foi seguindo...
+
+git cherry-prick hashDoCommit : puxa para a branch master apenas o commit da branch desenvolvimento, deixando todo o resgante deboa (merge manual).
+
+é possivel passar vários hash para recuperar no cherrypick
+
 
 
