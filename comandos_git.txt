@@ -2,22 +2,29 @@
 
 Comandos git:
 
+############# COMANDOS INICIAIS #############
+
 git init      : Inicia um Repositório na pasta quem que o comando foi executado
 git ls-files  : Mostra os arquivos controlados pelo git.
 git status    : Lista todos os arquivos que estão sendo tradados e não pelo git, e suas modificações
 git add       : adiciona arquivos no git (que podem ser commitados)
 git commit -m : Commita no repositorio ( -m é para passar uma mensagem em  -m "Primeiro Commit")
 
+############# AUTENTICAÇÃO #############
+
 git config user.name  : configura usuario para o git, se nao for global configura apenas para o repositorio presente
 git config user.email : configura email para o git, se nao for global configura apenas para o repositorio presente
 
 Obs1: Toda vez que voce adicionar um arquivo e comita-lo, caso faça alguma alteração, é preciso adiciona-lo novamente e para então commitar a alteração.
 
+############# LOGS #############
+
 git log -p: Informa os logs dos commits, com dados do usuario, dados mensagens e tudo mais.
 git whatchanged -p: Mesma idéia do Log só que com muitos mais detalhes. (-p Mostra os dados alterados em cada arquivo).
 -p mostra as linhas que houveram modificacoes
 
-#Remoto 
+############# COMANDO REMOTO ############# 
+
 git remote : Lista os repositorios remotos
 git remote add NOME URL : Adiciona um repositorio remote com o nome que vc escolher e passando o caminho do repositorio.
 
@@ -28,15 +35,14 @@ git push NOMEREPOSITORIO NOMEBRANCH : Commita os dados depois de adicionasdos e 
 <<<<<<< HEAD
 git branch -a : lista todas as branchs remotas e nao
 =======
-#Branchs
+
+############# BRANCHS #############
 
 git branch : Lista as branches
 git branch nomedabranch : cria uma branch nova
 git checkout nomedabranch : troca de branch
 
 Obs2: Quando se cria uma branch, ela herda tudo da master...
-
-
 
 >>>>>>> iniciando design
 
@@ -48,10 +54,9 @@ git push -d nomerepositorio nomebranch : deleta a branch remota
 
 git fetch nomedorepositorio : este comando verifica todas as atualizações que foram realizadas no repositorio 
 
-
 git mergetool --tool-help : Lista alguns programas para se fazer merge com interface gráfica
-git mergetool -t nome_do_programa : para instalar o programa
 
+git mergetool -t nome_do_programa : para instalar o programa
 
 Isso acontece quando gera conflito e o git não consegue fazer merge automatico, então é necessário a abertura do arquivo e o merge manual.    
 
@@ -67,6 +72,8 @@ Obs3: Quando voce está fazendo um rabase e acontece um conflito, o git cria uma
 
 O Comando rebase tem alguns outros comandos, são eles: --continue, --skip e --abort --continue deve ser utilizado após a resolução manual de conflitos; --skip faz com que suas alterações sejam descartadas; --abort volta atrás em todo o processo de rebase.
 
+
+############# STASH #############
 
 git stash : coloca em um pilha de memoria qualquer alteracao que vc nao queira commitar naquele momento.
 git stash pop: coloca denovo no controle do git 
@@ -85,7 +92,8 @@ git reset HAShDoCommit : Isso faz com que o arquivo volte a ser como no commit d
 
 git revert HAShdoCommit : Esse comando retira um unico commit, sem alterar os commits posteriores a ele.... ex: comit1, comit2, SAIU1commit, commit4, commit5...
 
-#BISECT 
+
+############# BISECT #############
 
 Bisect consegue filtrar commits, filtrando o commit ruim e bom... para usa-lo é preciso usar o start passando comando:
 
@@ -115,6 +123,7 @@ soltar vários comandos ao mesmo tempo:
 
 envia = git checkout master && git pull &&rebase master && (é preciso passar !) antes do comando, desta forma o git ira executar os comandos em sequencia 
 	
+############# LOG MAIS DETALHADOS #############
 
 git log --pretty=oneline  : mostra um commit por linha!
 git log --pretty=short  : igual ao log normal mas sem a data
