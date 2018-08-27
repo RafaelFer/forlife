@@ -1,4 +1,4 @@
-Autor: Rafael
+﻿Autor: Rafael
 
 Comandos git:
 
@@ -53,7 +53,7 @@ git mergetool --tool-help : Lista alguns programas para se fazer merge com inter
 git mergetool -t nome_do_programa : para instalar o programa
 
 
-Isso acontece quando gera conflito e o git não consegue fazer merge automatico, então é necessário a abertura do arquivo e o merge manual.	
+Isso acontece quando gera conflito e o git não consegue fazer merge automatico, então é necessário a abertura do arquivo e o merge manual.    
 
 git checkout -b nomedabranch : Cria uma branch e já muda para a branch criada.
 
@@ -104,6 +104,7 @@ git reset --soft : Com este comando, as alterações são removidas do históric
 git reset Com este comando, as alterações são removidas do histórico local de commits, do index, mas não doworking directory`.
 
 Ao digitarmos HEAD~ seguido de um número inteiro n, será feita uma referência ao n-ésimo commit anterior ao HEAD. Por exemplo, HEAD~1, faz referência ao penúltimo commit e HEAD~2, ao antepenúltimo. No caso específico do penúltimo commit, também pode-se referenciá-lo utilizando o atalho HEAD^
+<<<<<<< HEAD
 
 Criando alias com git:
 
@@ -138,3 +139,5 @@ git cherry-prick hashDoCommit : puxa para a branch master apenas o commit da bra
 
 Para usar uma ferramenta grafica, é possível iniciar uma ferramente grafica chamada git cola.
 
+=======
+>>>>>>> 23f267ef699b53ebd0cd4b28b01e4148835ebe00
