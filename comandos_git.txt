@@ -152,3 +152,5 @@ Para usar uma ferramenta grafica, é possível iniciar uma ferramente grafica ch
 >>>>>>> 23f267ef699b53ebd0cd4b28b01e4148835ebe00
 
 teste
+
+merge kraken
