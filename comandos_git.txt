@@ -1,4 +1,4 @@
-Autor: Rafael
+﻿Autor: Rafael
 
 Comandos git:
 
@@ -153,4 +153,4 @@ Para usar uma ferramenta grafica, é possível iniciar uma ferramente grafica ch
 
 teste
 
-merge kraken teste
+merge kraken
